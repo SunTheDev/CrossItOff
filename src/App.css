@@ -1,19 +1,27 @@
+* {
+  background-color: rgb(251, 248, 249);
+  font-family: "Cormorant", serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputbar {
+  padding-left: 500px;
+  margin-top: -150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  font-size: 20px;
 }
 
-.App-header {
+.image {
+  height: 450px;
+  width: 100%;
+}
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +30,45 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+.tasklist {
+  padding-top: 120px;
+  justify-content: center;
+  width: 50%;
+  padding-left: 25%;
+}
+.eachitem {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid rgb(203, 133, 203);
+  background-color: rgb(228, 228, 165);
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  background-color: rgb(228, 228, 165);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  font-size: 20px;
+  color: rgb(203, 133, 203);
+  background-color: rgb(228, 228, 165);
+  border-radius: 6px;
+  margin-left: 15px;
+}
+
+.deletebutton {
+  text-align: end;
+  color: orange;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+}
+.deletebutton:hover {
+  color: rgb(200, 24, 200);
+  background-color: transparent;
+  border: none;
 }
